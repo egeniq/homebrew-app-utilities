@@ -1,13 +1,13 @@
 class Care < Formula
   desc "Configure apps remotely"
-  homepage "https://github.com/egeniq/app-remote-config"
-  url "https://github.com/egeniq/app-remote-config.git",
-    tag:      "0.0.1",
-    revision: "8cfe0c1a15d54831ead482fd9fe0b60b5f17aa8e"
-  version "0.0.1"
+  homepage "https://github.com/egeniq/app-remote-config-care"
+  url "https://github.com/egeniq/app-remote-config-care.git",
+    tag:      "0.0.2",
+    revision: "e832725d991e93551435a63f02cd11cad15e1b7d"
+  version "0.0.2"
   license "MIT"
   version_scheme 1
-  head "https://github.com/egeniq/app-remote-config.git", branch: "main"
+  head "https://github.com/egeniq/app-remote-config-care.git", branch: "main"
 
   depends_on xcode: ["15.2", :build]
   uses_from_macos "swift"
