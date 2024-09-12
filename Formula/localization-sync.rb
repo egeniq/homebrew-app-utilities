@@ -13,8 +13,8 @@ class LocalizationSync < Formula
   uses_from_macos "swift"
 
   def install
-    system "swift", "build", "--disable-sandbox", "-c", "release", "--product", "care"
-    bin.install ".build/release/care"
+    system "swift", "build", "--disable-sandbox", "-c", "release", "--product", "localization-sync"
+    bin.install ".build/release/localization-sync"
   end
 
   test do
