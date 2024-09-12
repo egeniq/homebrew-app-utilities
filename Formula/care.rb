@@ -9,7 +9,7 @@ class Care < Formula
   version_scheme 1
   head "https://github.com/egeniq/app-remote-config-care.git", branch: "main"
 
-  depends_on xcode: ["15.2", :build]
+  depends_on xcode: ["15.4", :build]
   uses_from_macos "swift"
 
   def install
