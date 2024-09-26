@@ -4,7 +4,6 @@ class Care < Formula
   url "https://github.com/egeniq/app-remote-config-care.git",
     tag:      "0.4.0",
     revision: "b0fb5137ae4864289a6c88f8eeb0f309e00fd929"
-  version "0.4.0"
   license "MIT"
   version_scheme 1
   head "https://github.com/egeniq/app-remote-config-care.git", branch: "main"
