@@ -1,19 +1,26 @@
 class Care < Formula
   desc "Configure apps remotely"
   homepage "https://github.com/egeniq/app-remote-config"
-  url "https://github.com/egeniq/app-remote-config.git",
-    tag:      "0.6.1",
-    revision: "0a8e68c01704c53412f3394d468dbb0b38304a56"
   license "MIT"
   version_scheme 1
   head "https://github.com/egeniq/app-remote-config.git", branch: "main"
 
-  depends_on xcode: [">= 15.4", :build]
-  uses_from_macos "swift"
+  stable do
+    url "https://github.com/egeniq/app-remote-config/releases/download/0.7.2/care-0.7.2-macos.tar.gz"
+    sha256 "63ad4aa97d1e445d012903de601cb3c5a4da120e513b34275badf5142cd78ae6"
+    version "0.7.2"
+  end
+
+  depends_on xcode: [">= 15.4", :build] if build.head?
+  uses_from_macos "swift" if build.head?
 
   def install
-    system "swift", "build", "--disable-sandbox", "-c", "release", "--product", "care"
-    bin.install ".build/release/care"
+    if build.head?
+      system "swift", "build", "--disable-sandbox", "-c", "release", "--product", "care"
+      bin.install ".build/release/care"
+    else
+      bin.install "care"
+    end
   end
 
   test do
