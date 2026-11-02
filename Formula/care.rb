@@ -1,8 +1,8 @@
 class Care < Formula
   desc "Configure apps remotely"
   homepage "https://github.com/egeniq/app-remote-config"
-  url "https://github.com/egeniq/app-remote-config/releases/download/0.8.1/care-0.8.1-macos.tar.gz"
-  sha256 "0428912d0e44d40976d456664e38094eb43168f594e5fe6c43302479bd2f8c45"
+  url "https://github.com/egeniq/app-remote-config/releases/download/0.8.2/care-0.8.2-macos.tar.gz"
+  sha256 "014a118179ce9b5262647dc893b50cb0120aa3479decbd80167ce0bae90f0c71"
   license "MIT"
   version_scheme 1
   head "https://github.com/egeniq/app-remote-config.git", branch: "main"
